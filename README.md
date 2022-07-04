@@ -1,0 +1,2 @@
+# Statistical Experimental Design
+This repository contains the Matlab codes used for the paper [*Experimental design for fully nonlinear source location problems: which method should I choose?*](https://doi.org/10.1093/gji/ggaa358)
