@@ -35,3 +35,13 @@ All functions for design calculation, data calculation, data loading, and plotti
 | [`saveResults3D()`](SRC/save_results3D.m) | Save results to disk |
 | [`computeSimilarEvents()`](SRC/computeSimilarEvents.m) | Post-processing method to compute the number of repeated receiver locations |
 | [`splitMaster()`](SRC/splitMaster.m) | Post-processing method to split the results file into separate files based on the velocity model and experimental design algorithm used |
+
+## References
+D. Stowell and M. D. Plumbley
+    Fast multidimensional entropy estimation by k-d partitioning.
+    IEEE Signal Processing Letters 16 (6), 537--540, June 2009.
+    http://dx.doi.org/10.1109/LSP.2009.2017346
+
+Rob Campbell (2022). numSubplots - neatly arrange subplots (https://www.mathworks.com/matlabcentral/fileexchange/26310-numsubplots-neatly-arrange-subplots), MATLAB Central File Exchange. Retrieved July 28, 2022.
+    
+  
