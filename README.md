@@ -18,4 +18,18 @@ The subsurface structure is a uniform or simple layer cake model. This is such t
 Four wrapper scripts are available: [`wrapperLinearisedDesign`](wrapperLinearisedDesign.m), [`wrapperEntropyDesign`](wrapperEntropyDesign.m), [`wrapperDnOptimisation`](wrapperDnOptimisation.m), [`wrapperBatchMode`](wrapperBatchMode.m) corresponding to methods 1-3 and a script to run all the methods consecutively. These scripts run the required routines to calculate the data and the experimental design.
 
 ## Functions
-All functions for design calculation, data calculation, data loading, and plotting are located in the `SRC/` folder. Documentation is to follow.
+All functions for design calculation, data calculation, data loading, and plotting are located in the `SRC/` folder. What follows is a list of the functions included and a short description of their use. Note that the individual function files include documentation in the form of comments in the code. If anything is still unclear please do not hesitate to reach out.
+
+- [`loadM()`](SRC/loadM.m) Loads default M, the struct that holds all parameters relating to the geophysical model and the experimental design
+- [`getData()`](SRC/getData.m) Calculates the travel times for the parameters in M.
+- [`genModel3D()`](SRC/gen_model3D.m) Generate the slowness arrays for the travel time calculation
+- [`loadVelocityModel()`](SRC/loadVelocityModel.m) Load one of the three velocity models: Uniform, two layer, or three layers
+- [`compute_traveltimes3D()`](SRC/compute_traveltimes3D.m) Find the arrival times on the surface for a 3D subsurface velocity model. By taking advantage of symmetries a 2D solver can be used
+- [`solveForward()`](SRC/solveForward.m) 2D eikonal travel time solver (uses time_2d package)
+- [`computeLinear()`](SRC/computeLinear.m) Compute the optimal experimental design based on the linearised method
+- [`computeEntropy()`](SRC/computeEntropy.m) Compute the optimal experimental design based on Maximum Entropy 
+- [`computeDNO()`](SRC/computeDNO.m) Compute the optimal experimental design based on D<sub>N</sub>-Optimisation
+- [`plotMetric()`](SRC/plotMetric.m) Updates the receiver map plot during calculation
+- [`saveResults3D()`](SRC/save_results3D.m) Save results to disk
+- [`computeSimilarEvents()`](SRC/computeSimilarEvents.m) Post-processing method to compute the number of repeated receiver locations
+- [`splitMaster()`](SRC/splitMaster.m) Post-processing method to split the results file into separate files based on the velocity model and experimental design algorithm used
