@@ -43,5 +43,10 @@ D. Stowell and M. D. Plumbley
     http://dx.doi.org/10.1109/LSP.2009.2017346
 
 Rob Campbell (2022). numSubplots - neatly arrange subplots (https://www.mathworks.com/matlabcentral/fileexchange/26310-numsubplots-neatly-arrange-subplots), MATLAB Central File Exchange. Retrieved July 28, 2022.
+
+H Bloem, A Curtis, H Maurer
+    Experimental design for fully nonlinear source location problems: which method should I choose? Get access Arrow.
+    Geophysical Journal International, Volume 223, Issue 2, November 2020, Pages 944–958.
+    https://doi.org/10.1093/gji/ggaa358
     
   
